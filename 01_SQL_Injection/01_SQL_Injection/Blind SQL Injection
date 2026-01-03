@@ -1,0 +1,20 @@
+## Blind SQL Injection (In Progress)
+
+Blind SQL Injection is significantly more complex than error-based or UNION SQLi.
+
+### What I Learned:
+- Blind SQL relies on **boolean conditions**, **errors**, or **time delays**
+- No data is returned directly
+- Extraction requires:
+  - Checking conditions (true vs false)
+  - Character-by-character enumeration
+  - Functions like SUBSTR, ASCII, CASE WHEN
+
+### Challenges Faced:
+- Conditional responses were difficult to distinguish consistently
+- Error-based logic on Oracle databases required precise syntax
+- Manual extraction is extremely time-consuming
+
+### Key Takeaway:
+Blind SQL Injection requires patience, methodical thinking, and automation skills.
+I will revisit this after strengthening my skills with XSS and other vulnerabilities.
